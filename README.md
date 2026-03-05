@@ -21,3 +21,5 @@ Por fim, como parte do grupo votou no brechó e a outra parte na biblioteca, dec
 Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem grandes quantidades de livros por semanas e não possuem integração com seus serviços na web.Atuaremos em ajudar a melhorar a visibilidade, quantidade de vendas, prestígio, organização e consequentemente disponibilizar os acessos a literatura mais amplos.Nosso website irá considerar todas essas necessidades para maximar os ganhos potenciais e economia para estes tipos de comércio
 
 ##  Wireframe
+![imagem1](wiredesk.jpg)
+![imagem2](wiremobile.jpg)
