@@ -1,5 +1,13 @@
 # projeto_lagarta_02H
 
+### Alunos:
+
+Guilherme Pinho - 10755529
+
+Moabe da Silva Guedes Rêgo - 10748053
+
+Ryan Silva de Sousa - 10757255
+
 ## Processo de Ideação
 
 Inicialmente partimos de um brainstorming tentando buscar ideias relacionadas a assuntos próximos de nós, como comércios de familiares e amigos. A partir disso, expandimos esse pensamento inicial e chegamos em estabelecimentos maiores, porém, que ainda apresentam dificuldade em se adaptar a internet e essa transição entre catalogar seus produtos físicos em um campo virtual. 
