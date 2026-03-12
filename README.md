@@ -136,6 +136,9 @@ O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da 
         </section>
     </footer>
 ~~~
+
+Ao fim da pagina, temos o nosso footer, onde nele tem a localização ficticia da nossa bibloteca virtual e apresentamos no final os desenvolvedores deste projeto, mostrando nosso nomes e icones.
+
 #### Fim do Footer
 #### Fim do HTML
 
