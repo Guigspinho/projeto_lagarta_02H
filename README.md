@@ -38,7 +38,7 @@ Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem 
     <title> Biblioteca </title>
 </head>
 ~~~
-explicaçao balblabla
+Em nosso head temos as tags metas que contém as configurações de resposividade da home e das definições de caracteres especiais, links para arquivos externos que virão posteriormente e o título da página.
 #### Fim do Head
 
 ### Body
@@ -52,7 +52,7 @@ explicaçao balblabla
         <a href=""> CONTATO </a>
     </header>
 ~~~
-
+Fizemos um header onde ficará localizado o menu da página com a logo e nesse menu teremos nossos links <a> que redirecionarão para as páginas posteriores do site.
 #### Section (Plano de fundo biblioteca)
 ~~~html
 <section>
