@@ -61,13 +61,16 @@ explicaçao balblabla
 ~~~
 
 #### Main
+Início do conteúdo principal da página(main) com 3 sections
 
 ##### Section (3 Cards)
 ~~~html
 <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
             <section> <!-- 1º Card (Programação)-->
                 <header>
-                    <img src="cardprogramacao.jpg" alt="">
+					<a href="programacao.html">
+                    	<img src="cardprogramacao.jpg" alt="">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -76,7 +79,7 @@ explicaçao balblabla
                 </div>
             </section>
 ~~~
-
+1ºSection contém 3 cards
 ##### 2º Section
  ~~~html
 <section> <!-- 2º Section -->
@@ -172,7 +175,9 @@ explicaçao balblabla
         <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
             <section> <!-- 1º Card (Programação)-->
                 <header>
-                    <img src="cardprogramacao.jpg" alt="">
+					<a href="programacao.html">
+                    	<img src="cardprogramacao.jpg" alt="">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -183,7 +188,9 @@ explicaçao balblabla
 
             <section> <!-- 2º Card (Acervo) -->
                 <header>
-                    <img src="cardacervo.jpg" alt="">
+					<a href="acervo.html">
+                   		<img src="cardacervo.jpg" alt="">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -194,7 +201,9 @@ explicaçao balblabla
 
             <section> <!-- 3º Card (Eventos) -->
                 <header>
-                    <img src="cardeventos.jpg" alt="">
+					<a href="eventos.html">
+                    	<img src="cardeventos.jpg" alt="">
+					</a>
                 </header>
                 <div>
                     <article>
