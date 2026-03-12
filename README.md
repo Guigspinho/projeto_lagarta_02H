@@ -112,6 +112,9 @@ O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da 
             </div>
         </section>
 ~~~
+O 3º Section vai seguir o mesmo espaço e estrutura dos sections passados, porém dividido em duas divs, uma apenas com um parágrafo falando sobre a biblioteca, e a outra com o local (fictício) dessa biblioteca, com um link rel para posteriormente adicionarmos o mapa do google.
+
+
 #### Fim do Main
 #### Fim do Body
 
