@@ -79,7 +79,7 @@ Início do conteúdo principal da página(main) com 3 sections
                 </div>
             </section>
 ~~~
-1ºSection contém 3 cards
+O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da biblioteca: A de programações com detalhes de datas e futuras oficinas, do Acervo e de eventos para marcar algum evento próprio como um lançamento de livro. Nisso cada card tem o seu header com uma imagem clicável, e uma div com seu article e parágrafo com um texto simples explicando cada card
 ##### 2º Section
  ~~~html
 <section> <!-- 2º Section -->
