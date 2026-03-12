@@ -140,7 +140,7 @@ O 3º Section vai seguir o mesmo espaço e estrutura dos sections passados, por�
     </footer>
 ~~~
 
-Ao fim da pagina, temos o nosso footer, onde nele tem a localização ficticia da nossa bibloteca virtual e apresentamos no final os desenvolvedores deste projeto, mostrando nosso nomes e icones.
+Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da nossa bibloteca virtual, apresentamos também no final, os desenvolvedores deste projeto, mostrando nosso nomes e icones.
 
 #### Fim do Footer
 #### Fim do HTML
