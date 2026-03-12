@@ -60,10 +60,10 @@ Fizemos um header onde ficará localizado o menu da página com a logo e nesse m
         <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
     </section>
 ~~~
-Painel com uma imagem da biblioteca e o nome da mesma por cima
+Painel com uma imagem da biblioteca e o nome da mesma por cima.
 
 #### Main
-Início do conteúdo principal da página(main) com 3 sections
+Início do conteúdo principal da página(main) com 3 sections.
 
 ##### Section (3 Cards)
 ~~~html
@@ -81,7 +81,7 @@ Início do conteúdo principal da página(main) com 3 sections
                 </div>
             </section>
 ~~~
-O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da biblioteca: A de programações com detalhes de datas e futuras oficinas, do Acervo e de eventos para marcar algum evento próprio como um lançamento de livro. Nisso cada card tem o seu header com uma imagem clicável, e uma div com seu article e parágrafo com um texto simples explicando cada card
+O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da biblioteca: A de programações com detalhes de datas e futuras oficinas, do Acervo e de eventos para marcar algum evento próprio como um lançamento de livro. Nisso cada card tem o seu header com uma imagem clicável, e uma div com seu article e parágrafo com um texto simples explicando cada card.
 
 ##### 2º Section
  ~~~html
@@ -100,7 +100,7 @@ O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da 
             </div>
         </section>
 ~~~
-Nesse segundo Section nós o separamos em duas divs pois dividirão a tela ao meio com seus respectivos conteúdos textuais contidos em <p> no article e imagens ilustrativas nas tags <img>
+Nesse segundo Section nós o separamos em duas divs pois dividirão a tela ao meio com seus respectivos conteúdos textuais contidos em <p> no article e imagens ilustrativas nas tags <img>.
 ##### 3º Section
  ~~~html
  <section> <!-- 3º Section -->
@@ -117,6 +117,7 @@ O 3º Section vai seguir o mesmo espaço e estrutura dos sections passados, por�
 
 #### Fim do Main
 #### Fim do Body
+
 
 ### Footer
 ~~~html
@@ -144,11 +145,6 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 
 #### Fim do Footer
 #### Fim do HTML
-
-
-
-
-
 
 
 
