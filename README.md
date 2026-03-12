@@ -41,7 +41,8 @@ Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem 
 explicaçao balblabla
 #### Fim do Head
 
-### Body - Header
+### Body
+#### Header (Menu)
 ~~~html
 <header>
         <img src="logorickriordan.png" alt="Logo">
@@ -52,16 +53,16 @@ explicaçao balblabla
     </header>
 ~~~
 
-### Body - Section
+#### Section (Plano de fundo biblioteca)
 ~~~html
 <section>
         <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
     </section>
 ~~~
 
-### Body - Main
+### Main
 
-#### Main - Section
+#### Section (3 Cards)
 ~~~html
 <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
             <section> <!-- 1º Card (Programação)-->
@@ -76,7 +77,7 @@ explicaçao balblabla
             </section>
 ~~~
 
-#### Body - 2º Section
+#### 2º Section
  ~~~html
 <section> <!-- 2º Section -->
             <div> <!-- Promoção/Evento -->
@@ -94,7 +95,7 @@ explicaçao balblabla
         </section>
 ~~~
 
-#### Body - 3º Section
+#### 3º Section
  ~~~html
  <section> <!-- 3º Section -->
             <div> <!-- Sobre nós -->
