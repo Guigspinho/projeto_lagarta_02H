@@ -26,6 +26,7 @@ Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem 
 
 ## Tutorial HTML
 
+### Head
 ~~~html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,9 +39,95 @@ Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem 
 </head>
 ~~~
 explicaçao balblabla
+#### Fim do Head
 
+### Body - Header
+~~~html
+<header>
+        <img src="logorickriordan.png" alt="Logo">
+        <a href=""> EVENTOS </a>
+        <a href=""> PROGRAMAÇÃO </a>
+        <a href=""> ACERVO </a>
+        <a href=""> CONTATO </a>
+    </header>
+~~~
 
+### Body - Section
+~~~html
+<section>
+        <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
+    </section>
+~~~
 
+### Body - Main
+
+#### Main - Section
+~~~html
+<section> <!-- 1º Section com os 3 cards principais(3 sections) -->
+            <section> <!-- 1º Card (Programação)-->
+                <header>
+                    <img src="cardprogramacao.jpg" alt="">
+                </header>
+                <div>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                    </article>
+                </div>
+            </section>
+~~~
+
+#### Body - 2º Section
+ ~~~html
+<section> <!-- 2º Section -->
+            <div> <!-- Promoção/Evento -->
+                <article>
+                    <img src="eventoprox.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur libero architecto in, consequuntur deserunt ratione voluptate cupiditate aliquam. At provident exercitationem facere ipsa dolorum!</p>
+                </article>
+            </div>
+            <div> <!-- Livros em alta-->
+                <article>
+                    <img src="livroemalta.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste debitis eum a aut dolore beatae, consectetur quam esse fuga odio repellendus natus pariatur dignissimos eos?</p>
+                </article>
+            </div>
+        </section>
+~~~
+
+#### Body - 3º Section
+ ~~~html
+ <section> <!-- 3º Section -->
+            <div> <!-- Sobre nós -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur dolore ut! Nisi molestiae nostrum alias, molestias amet nobis itaque.</p>
+            </div>
+            <div> <!-- Local -->
+                <link rel="stylesheet" href="">
+            </div>
+        </section>
+~~~
+#### Fim do main
+
+### Footer
+~~~html
+<footer>
+        <p>R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
+        <section>
+            <p>Desenvolvido por:</p>
+            <figure>
+                <img src="iconeguilherme.png" alt="">
+                <figcaption>Guilherme Pinho</figcaption>
+            </figure>
+            <figure>
+                <img src="iconemoabe.png" alt="">
+                <figcaption>Moabe Guedes</figcaption>
+            </figure>
+            <figure>
+                <img src="iconeryan.png" alt="">
+                <figcaption>Ryan Sousa</figcaption>
+            </figure>
+        </section>
+    </footer>
+~~~
 
 
 
