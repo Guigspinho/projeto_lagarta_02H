@@ -24,6 +24,139 @@ Escolhemos focar nos Sebos/Bibliotecas levando em consideração os que recebem 
 ![imagem1](wiredesk.jpg)
 ![imagem2](wiremobile.jpg)
 
-## HTML
+## Tutorial HTML
+
+~~~html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+	<link rel="icon" type="image/x-icon" href="">
+    <title> Biblioteca </title>
+</head>
+~~~
+explicaçao balblabla
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## HTML (index.html)
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+	<link rel="icon" type="image/x-icon" href="">
+    <title> Biblioteca </title>
+</head>
+<body>
+    <header>
+        <img src="logorickriordan.png" alt="Logo">
+        <a href=""> EVENTOS </a>
+        <a href=""> PROGRAMAÇÃO </a>
+        <a href=""> ACERVO </a>
+        <a href=""> CONTATO </a>
+    </header>
+    <section>
+        <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
+    </section>
+
+    <main> 
+        <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
+            <section> <!-- 1º Card (Programação)-->
+                <header>
+                    <img src="cardprogramacao.jpg" alt="">
+                </header>
+                <div>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                    </article>
+                </div>
+            </section>
+
+            <section> <!-- 2º Card (Acervo) -->
+                <header>
+                    <img src="cardacervo.jpg" alt="">
+                </header>
+                <div>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                    </article>
+                </div>
+            </section>
+
+            <section> <!-- 3º Card (Eventos) -->
+                <header>
+                    <img src="cardeventos.jpg" alt="">
+                </header>
+                <div>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                    </article>
+                </div>
+            </section>         
+        </section>
+
+        <section> <!-- 2º Section -->
+            <div> <!-- Promoção/Evento -->
+                <article>
+                    <img src="eventoprox.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur libero architecto in, consequuntur deserunt ratione voluptate cupiditate aliquam. At provident exercitationem facere ipsa dolorum!</p>
+                </article>
+            </div>
+            <div> <!-- Livros em alta-->
+                <article>
+                    <img src="livroemalta.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste debitis eum a aut dolore beatae, consectetur quam esse fuga odio repellendus natus pariatur dignissimos eos?</p>
+                </article>
+            </div>
+        </section>
+
+        <section> <!-- 3º Section -->
+            <div> <!-- Sobre nós -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur dolore ut! Nisi molestiae nostrum alias, molestias amet nobis itaque.</p>
+            </div>
+            <div> <!-- Local -->
+                <link rel="stylesheet" href="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
+        <section>
+            <p>Desenvolvido por:</p>
+            <figure>
+                <img src="iconeguilherme.png" alt="">
+                <figcaption>Guilherme Pinho</figcaption>
+            </figure>
+            <figure>
+                <img src="iconemoabe.png" alt="">
+                <figcaption>Moabe Guedes</figcaption>
+            </figure>
+            <figure>
+                <img src="iconeryan.png" alt="">
+                <figcaption>Ryan Sousa</figcaption>
+            </figure>
+        </section>
+    </footer>
+</body>
+</html>
+
 
 
