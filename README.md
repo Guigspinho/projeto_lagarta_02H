@@ -60,9 +60,9 @@ explicaçao balblabla
     </section>
 ~~~
 
-### Main
+#### Main
 
-#### Section (3 Cards)
+##### Section (3 Cards)
 ~~~html
 <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
             <section> <!-- 1º Card (Programação)-->
@@ -77,7 +77,7 @@ explicaçao balblabla
             </section>
 ~~~
 
-#### 2º Section
+##### 2º Section
  ~~~html
 <section> <!-- 2º Section -->
             <div> <!-- Promoção/Evento -->
@@ -95,7 +95,7 @@ explicaçao balblabla
         </section>
 ~~~
 
-#### 3º Section
+##### 3º Section
  ~~~html
  <section> <!-- 3º Section -->
             <div> <!-- Sobre nós -->
@@ -106,7 +106,8 @@ explicaçao balblabla
             </div>
         </section>
 ~~~
-#### Fim do main
+#### Fim do Main
+#### Fim do Body
 
 ### Footer
 ~~~html
@@ -129,6 +130,8 @@ explicaçao balblabla
         </section>
     </footer>
 ~~~
+#### Fim do Footer
+#### Fim do HTML
 
 
 
