@@ -100,7 +100,7 @@ O 1ºSection contém 3 cards direcionados para as 3 páginas mais relevantes da 
             </div>
         </section>
 ~~~
-
+Nesse segundo Section nós o separamos em duas divs pois dividirão a tela ao meio com seus respectivos conteúdos textuais contidos em <p> no article e imagens ilustrativas nas tags <img>
 ##### 3º Section
  ~~~html
  <section> <!-- 3º Section -->
