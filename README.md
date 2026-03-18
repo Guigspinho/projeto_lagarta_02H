@@ -189,7 +189,6 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
                     </article>
                 </div>
             </section>
-
             <section> <!-- 2º Card (Acervo) -->
                 <header>
 					<a href="acervo.html">
@@ -202,7 +201,6 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
                     </article>
                 </div>
             </section>
-
             <section> <!-- 3º Card (Eventos) -->
                 <header>
 					<a href="eventos.html">
@@ -216,7 +214,6 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
                 </div>
             </section>         
         </section>
-
         <section> <!-- 2º Section -->
             <div> <!-- Promoção/Evento -->
                 <article>
@@ -231,7 +228,6 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
                 </article>
             </div>
         </section>
-
         <section> <!-- 3º Section -->
             <div> <!-- Sobre nós -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur dolore ut! Nisi molestiae nostrum alias, molestias amet nobis itaque.</p>
