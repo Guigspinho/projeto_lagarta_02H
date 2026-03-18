@@ -155,108 +155,115 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 
 
 ## HTML (index.html)
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-	<link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="">
     <title> Biblioteca </title>
 </head>
 <body>
-    <header>
-        <img src="logorickriordan.png" alt="Logo">
-        <a href=""> EVENTOS </a>
-        <a href=""> PROGRAMAÇÃO </a>
-        <a href=""> ACERVO </a>
-        <a href=""> CONTATO </a>
+    <header class="menu">
+        <img src="logorickriordan.png" alt="Logo" class="logo">
+        <a href="" class="fontemenu"> EVENTOS </a>
+        <a href="" class="fontemenu"> PROGRAMAÇÃO </a>
+        <a href="" class="fontemenu"> ACERVO </a>
+        <a href="" class="fontemenu" id="contato"> CONTATO </a>
     </header>
     <section>
         <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
-	</section>
+    </section>
+    <h1 class="tituloinicial">Conheça a nossa Biblioteca!</h1>
     <main> 
-        <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
-            <section> <!-- 1º Card (Programação)-->
+        <section class="sectioncards">
+            <section>
                 <header>
-					<a href="programacao.html">
-                    	<img src="cardprogramacao.jpg" alt="">
-					</a>
+                    <a href="programacao.html">
+                        <img src="cardprogramacao.jpg" alt="" class="imgcards">
+                    </a>
                 </header>
                 <div>
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                        <p class="textocards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
                     </article>
                 </div>
             </section>
-            <section> <!-- 2º Card (Acervo) -->
+
+            <section>
                 <header>
-					<a href="acervo.html">
-                   		<img src="cardacervo.jpg" alt="">
-					</a>
+                    <a href="acervo.html">
+                        <img src="cardacervo.jpg" alt="" class="imgcards">
+                    </a>
                 </header>
                 <div>
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                        <p class="textocards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
                     </article>
                 </div>
             </section>
-            <section> <!-- 3º Card (Eventos) -->
+
+            <section>
                 <header>
-					<a href="eventos.html">
-                    	<img src="cardeventos.jpg" alt="">
-					</a>
+                    <a href="eventos.html">
+                        <img src="cardeventos.jpg" alt="" class="imgcards">
+                    </a>
                 </header>
                 <div>
                     <article>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
+                        <p class="textocards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae!</p>
                     </article>
                 </div>
             </section>         
         </section>
-        <section> <!-- 2º Section -->
-            <div> <!-- Promoção/Evento -->
+
+        <section class="sectionpromocaoelivros">
+            <div>
                 <article>
-                    <img src="eventoprox.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur libero architecto in, consequuntur deserunt ratione voluptate cupiditate aliquam. At provident exercitationem facere ipsa dolorum!</p>
+                    <img src="eventoprox.jpg" alt="" class="imgsection2">
+                    <p class="textosection2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur libero architecto in, consequuntur deserunt ratione voluptate cupiditate aliquam. At provident exercitationem facere ipsa dolorum!</p>
                 </article>
             </div>
-            <div> <!-- Livros em alta-->
+            <div>
                 <article>
-                    <img src="livroemalta.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste debitis eum a aut dolore beatae, consectetur quam esse fuga odio repellendus natus pariatur dignissimos eos?</p>
+                    <img src="livroemalta.jpg" alt="" class="imgsection2">
+                    <p class="textosection2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste debitis eum a aut dolore beatae, consectetur quam esse fuga odio repellendus natus pariatur dignissimos eos?</p>
                 </article>
             </div>
         </section>
-        <section> <!-- 3º Section -->
-            <div> <!-- Sobre nós -->
+
+        <section>
+            <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur dolore ut! Nisi molestiae nostrum alias, molestias amet nobis itaque.</p>
             </div>
-            <div> <!-- Local -->
+            <div>
                 <link rel="stylesheet" href="">
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footerprincipal">
         <p>R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
-        <section>
-            <p>Desenvolvido por:</p>
-            <figure>
-                <img src="iconeguilherme.png" alt="">
+        <p>Desenvolvido por:</p>
+        <section class="footersection">
+            <figure class="footerfigure">
+                <img src="iconeguilherme.png" alt="" class="footerimgequipe">
                 <figcaption>Guilherme Pinho</figcaption>
             </figure>
-            <figure>
-                <img src="iconemoabe.png" alt="">
+            <figure class="footerfigure">
+                <img src="iconemoabe.png" alt="" class="footerimgequipe">
                 <figcaption>Moabe Guedes</figcaption>
             </figure>
-            <figure>
-                <img src="iconeryan.png" alt="">
+            <figure class="footerfigure">
+                <img src="iconeryan.png" alt="" class="footerimgequipe">
                 <figcaption>Ryan Sousa</figcaption>
             </figure>
         </section>
     </footer>
 </body>
 </html>
+```
 
 
 
