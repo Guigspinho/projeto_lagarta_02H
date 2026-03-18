@@ -174,8 +174,7 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
     </header>
     <section>
         <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
-    </section>
-
+	</section>
     <main> 
         <section> <!-- 1º Section com os 3 cards principais(3 sections) -->
             <section> <!-- 1º Card (Programação)-->
