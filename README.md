@@ -268,6 +268,7 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 ```
 
 ## CSS (index.css)
+### RESET CSS
 ```css
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -290,7 +291,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
     box-sizing: border-box;
 } /*Css reset*/
+``` 
+Aqui aplicamos o reset da página zerando as margens,paddings,borders etc para facilitar as estilizações que iremos utilizar nas classes dos elementos.
 
+```css
 html{
     background-color: #fffff0;
 }
@@ -299,7 +303,12 @@ body{
     padding-top: 180px; /*ajustar o começo do body para não ficar atrás do menu*/
     
 }
+```
+Aqui ajustamos a cor de fundo da página e colocamos um padding top para a imagem não ficar atras do nosso menu de navegação
 
+### HEADER
+
+```css
 
 /* Menu superior fixo na tela */
 .menu{ 
@@ -346,6 +355,9 @@ body{
 
 /* FIM DO MENU (linha 19) */
 
+```
+Criamos 3 Classes para separar a estilização dos elementos, a primeira classe .menu é respectiva a todo o header e é onde foram colocados a cor de fundo,posição fixa ao descer a barra de rolagem, display flex para alinhar horizontalmente, top para colar no topo da página, width 100% para usar toda a tela
+```css
 .tituloinicial{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 34px;
