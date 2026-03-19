@@ -187,6 +187,58 @@ body{
 ```
 Aqui ajustamos a cor de fundo da página e colocamos um padding top para a imagem não ficar atras do nosso menu de navegação
 
+### HEADER
+
+```css
+
+/* Menu superior fixo na tela */
+.menu{ 
+    background-color: #B4C3D2;
+    padding: 15px 50px;
+
+    position: fixed; /*menu fixo durante rolagem da página (position para fixar, width para preencher a tela inteira e top para grudar no topo da pagina)*/
+    width: 100%;
+    top: 0;
+
+    display: flex; /*flexbox para alinhar os itens horizontalmente, dando espaço e centralizando*/
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.links{
+    display: flex;
+    gap: 80px; 
+}
+
+/* Logo do menu superior */
+.logo{
+    width: 150px;
+}
+
+/* Fonte geral do menu superior */
+.links a{
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+
+/* Botão de contato do menu superior */
+#contato{
+    border: 3px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* FIM DO MENU (linha 19) */
+
+```
+Criamos 3 Classes para separar a estilização dos elementos, a primeira classe .menu é respectiva a todo o header e é onde foram colocados a cor de fundo,posição fixa ao descer a barra de rolagem, display flex para alinhar horizontalmente, top para colar no topo da página, width 100% para usar toda a tela .links é a classe da div que contém display flex e um espaço entre eles, .links a refere-se a estilização dos textos.Logo após, criamos um id para o link contato pois queriamos deixar ele diferente dos restantes.
+
 ### 1º Section
 ~~~css
 .sectioncards{
@@ -350,58 +402,6 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
 
 ## CSS (index.css)
 
-
-### HEADER
-
-```css
-
-/* Menu superior fixo na tela */
-.menu{ 
-    background-color: #B4C3D2;
-    padding: 15px 50px;
-
-    position: fixed; /*menu fixo durante rolagem da página (position para fixar, width para preencher a tela inteira e top para grudar no topo da pagina)*/
-    width: 100%;
-    top: 0;
-
-    display: flex; /*flexbox para alinhar os itens horizontalmente, dando espaço e centralizando*/
-    align-items: center;
-    justify-content: space-between;
-    
-    
-}
-
-.links{
-    display: flex;
-    gap: 80px; 
-}
-
-/* Logo do menu superior */
-.logo{
-    width: 150px;
-}
-
-/* Fonte geral do menu superior */
-.links a{
-    text-decoration: none;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-
-}
-
-/* Botão de contato do menu superior */
-#contato{
-    border: 3px solid black;
-    padding: 5px;
-    font-weight: bold;
-}
-
-
-/* FIM DO MENU (linha 19) */
-
-```
-Criamos 3 Classes para separar a estilização dos elementos, a primeira classe .menu é respectiva a todo o header e é onde foram colocados a cor de fundo,posição fixa ao descer a barra de rolagem, display flex para alinhar horizontalmente, top para colar no topo da página, width 100% para usar toda a tela
 ```css
 .tituloinicial{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
