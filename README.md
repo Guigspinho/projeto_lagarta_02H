@@ -212,8 +212,28 @@ No 1º section (que contém 3 "cards": com texto e imagem) temos 3 classes de pe
 Já no "imgcards" alteramos apenas as 3 imagens, modificando o seu tamanho, arrendondando suas bordas e aumentando a sua margem inferior para espaçar da legenda.
 No "textocards" alteramos apenas a fonte dos textos desse section.
 
-
-
+### 3º Section
+~~~css
+.sectionfinal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B4C3D2;
+    padding: 30px 0;
+}
+.sobrenos{
+    inline-size: 300px;
+    margin: auto;
+}
+.local{
+    margin: auto;
+}
+.local img{
+    max-width: 100%;
+    width: 400px;
+}
+~~~
+No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox para alinhar e espaçar os conteúdos, com uma cor de fundo e um padding para espaçar o conteúdo das bordas. Seguindo com ajustes pontuais nos dois conteúdos que teremos nessa section: o "sobrenos", com o inline-size para quebrar o texto em mais de uma linha e o ajuste na margem; e o "local", com ajuste na margem e tamanho da imagem do mapa.
 
 
 
