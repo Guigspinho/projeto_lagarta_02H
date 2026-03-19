@@ -264,6 +264,55 @@ No 1º section (que contém 3 "cards": com texto e imagem) temos 3 classes de pe
 Já no "imgcards" alteramos apenas as 3 imagens, modificando o seu tamanho, arrendondando suas bordas e aumentando a sua margem inferior para espaçar da legenda.
 No "textocards" alteramos apenas a fonte dos textos desse section.
 
+### 2º Section
+~~~css
+.sectionpromocaoelivros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 30px 0; /*Espaçar os 2 conteúdos (e a linha) do 3º section*/
+}
+
+.imgsection2{
+    max-width: 20%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.titulosection2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.textosection2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    inline-size: 300px;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+
+.bloco1section2{
+    margin: 0 30px;
+    
+}
+
+.linhavertical{
+    height: 400px; 
+    border: 1px solid black; 
+    margin: 0 15px;
+} 
+
+.bloco2section2{
+    margin: 0 30px;
+    
+}
+~~~
+Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do section 1, aqui usamos justify-content centralizado e diminuimos o padding para 30px para espaçar os dois conteudos. Colocamos inline size para quebrar os textos que colocamos, colocamos tambem uma linha vertical com altura, margem e borda definifidos, para separar os conteudos. Pra finalizar, os blocos 1 e 2, colocamos margem para separar os textos da imagem, para nao ficarem colados um com o outro.
+
 ### 3º Section
 ~~~css
 .sectionfinal{
