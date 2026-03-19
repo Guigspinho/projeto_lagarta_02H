@@ -353,7 +353,8 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
 No footer aplicamos uma cor mais escura, novamente um padding para espaçar o conteúdo das bordas e um flexbox com o conteúdo centralizado e um gap para separar os figures interiores (com imagem e nome da equipe).
 
 ### Footer -  Equipe de desenvolvimento
-.footerfigure{
+~~~css
+	.footerfigure{
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
