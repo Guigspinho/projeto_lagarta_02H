@@ -148,8 +148,69 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 
 ## Tutorial CSS
 
-### Header
+### RESET CSS
+```css
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+} /*Css reset*/
+``` 
+Aqui aplicamos o reset da página zerando as margens,paddings,borders etc para facilitar as estilizações que iremos utilizar nas classes dos elementos.
 
+### Configuração html e body geral
+```css
+html{
+    background-color: #fffff0;
+}
+
+body{
+    padding-top: 180px; /*ajustar o começo do body para não ficar atrás do menu*/
+    
+}
+```
+Aqui ajustamos a cor de fundo da página e colocamos um padding top para a imagem não ficar atras do nosso menu de navegação
+
+### 1º Section
+~~~css
+.sectioncards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px; /*Espaçar os 3 cards do 2º section*/
+    background-color: #D1DCE8;
+}
+
+.imgcards{
+    width: 500px;
+    margin-bottom: 10px; /*Espaçar a imagem da legenda*/
+    border-radius: 25px;
+}
+
+.textocards{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+~~~
+No 1º section (que contém 3 "cards": com texto e imagem) temos 3 classes de personalização. A "sectioncards" serve para dar forma o 1º section e dispor os conteúdos interiores da forma que queriamos. Tem um flexbox para alinhar os contéudos horizontalmente, com espaço entre si e alinhados no centro. Com padding abaixo e acima para descolar as imagens e texto dos limites do section. E aplicando uma cor de fundo apenas nesse section. 
+Já no "imgcards" alteramos apenas as 3 imagens, modificando o seu tamanho, arrendondando suas bordas e aumentando a sua margem inferior para espaçar da legenda.
+No "textocards" alteramos apenas a fonte dos textos desse section.
 
 
 
@@ -268,43 +329,7 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 ```
 
 ## CSS (index.css)
-### RESET CSS
-```css
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    box-sizing: border-box;
-} /*Css reset*/
-``` 
-Aqui aplicamos o reset da página zerando as margens,paddings,borders etc para facilitar as estilizações que iremos utilizar nas classes dos elementos.
 
-```css
-html{
-    background-color: #fffff0;
-}
-
-body{
-    padding-top: 180px; /*ajustar o começo do body para não ficar atrás do menu*/
-    
-}
-```
-Aqui ajustamos a cor de fundo da página e colocamos um padding top para a imagem não ficar atras do nosso menu de navegação
 
 ### HEADER
 
