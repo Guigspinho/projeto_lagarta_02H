@@ -336,6 +336,49 @@ Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do s
 ~~~
 No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox para alinhar e espaçar os conteúdos, com uma cor de fundo e um padding para espaçar o conteúdo das bordas. Seguindo com ajustes pontuais nos dois conteúdos que teremos nessa section: o "sobrenos", com o inline-size para quebrar o texto em mais de uma linha e o ajuste na margem; e o "local", com ajuste na margem e tamanho da imagem do mapa.
 
+### Footer - Geral
+~~~css
+.footerprincipal{
+    background-color: gray;
+    padding: 30px 0;
+}
+
+.footersection{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+~~~
+No footer aplicamos uma cor mais escura, novamente um padding para espaçar o conteúdo das bordas e um flexbox com o conteúdo centralizado e um gap para separar os figures interiores (com imagem e nome da equipe).
+
+### Footer -  Equipe de desenvolvimento
+.footerfigure{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerimgequipe{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+
+}
+
+.footertexto{
+    
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footernomealuno{
+    margin-top: 10px;
+}
+~~~
+Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso há um flexbox em coluna para deixar o nome abaixo da imagem, com espaço entre eles e centralizado. A classe "footerimgequipe" para definir o tamanho das imagens, deixar ela em círculo e com margem acima delas. Nas últimas 2 classes apenas centralizamos o texto, mudamos a fonte e adicionamos uma margem para separar mais os nomes das imagens.
 
 
 ## HTML (index.html)
@@ -451,7 +494,83 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
 
 ## CSS (index.css)
 
-```css
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+} /*Css reset*/
+
+html{
+    background-color: #fffff0;
+}
+
+body{
+    padding-top: 180px; /*ajustar o começo do body para não ficar atrás do menu*/
+    
+}
+
+
+/* Menu superior fixo na tela */
+.menu{ 
+    background-color: #B4C3D2;
+    padding: 15px 50px;
+
+    position: fixed; /*menu fixo durante rolagem da página (position para fixar, width para preencher a tela inteira e top para grudar no topo da pagina)*/
+    width: 100%;
+    top: 0;
+
+    display: flex; /*flexbox para alinhar os itens horizontalmente, dando espaço e centralizando*/
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.links{
+    display: flex;
+    gap: 80px; 
+}
+
+/* Logo do menu superior */
+.logo{
+    width: 150px;
+}
+
+/* Fonte geral do menu superior */
+.links a{
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+
+/* Botão de contato do menu superior */
+#contato{
+    border: 3px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* FIM DO MENU (linha 19) */
+
 .tituloinicial{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 34px;
@@ -483,8 +602,7 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
 }
 
 
-### 2º Section
-~~~css
+/* 2º Section (Programação e Livros em alta*/
 .sectionpromocaoelivros{
     display: flex;
     justify-content: center;
@@ -529,8 +647,6 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
     margin: 0 30px;
     
 }
-~~~
-Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do section 1, aqui usamos justify-content centralizado e diminuimos o padding para 30px para espaçar os dois conteudos. Colocamos inline size para quebrar os textos que colocamos, colocamos tambem uma linha vertical com altura, margem e borda definifidos, para separar os conteudos. Pra finalizar, os blocos 1 e 2, colocamos margem para separar os textos da imagem, para nao ficarem colados um com o outro.
 
 /*  3º Section - Sobre nós / Local   */
 
@@ -540,11 +656,9 @@ Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do s
     justify-content: space-between;
     align-items: center;
     background-color: #B4C3D2;
-    top: 0;
     padding: 30px 0;
 }
 .sobrenos{
-    display: flex;
     inline-size: 300px;
     margin: auto;
 }
@@ -597,5 +711,5 @@ Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do s
 .footernomealuno{
     margin-top: 10px;
 }
-```
+
 
