@@ -267,5 +267,226 @@ Ao fim da pagina temos o nosso footer, onde nele tem a localização ficticia da
 </html>
 ```
 
+## CSS (index.css)
+```css
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+} /*Css reset*/
 
+html{
+    background-color: #fffff0;
+}
+
+body{
+    padding-top: 180px; /*ajustar o começo do body para não ficar atrás do menu*/
+    
+}
+
+
+/* Menu superior fixo na tela */
+.menu{ 
+    background-color: #B4C3D2;
+    padding: 15px 50px;
+
+    position: fixed; /*menu fixo durante rolagem da página (position para fixar, width para preencher a tela inteira e top para grudar no topo da pagina)*/
+    width: 100%;
+    top: 0;
+
+    display: flex; /*flexbox para alinhar os itens horizontalmente, dando espaço e centralizando*/
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.links{
+    display: flex;
+    gap: 80px; 
+}
+
+/* Logo do menu superior */
+.logo{
+    width: 150px;
+}
+
+/* Fonte geral do menu superior */
+.links a{
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+
+/* Botão de contato do menu superior */
+#contato{
+    border: 3px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/* FIM DO MENU (linha 19) */
+
+.tituloinicial{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* 1º Section (3 cards) */
+.sectioncards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px; /*Espaçar os 3 cards do 2º section*/
+    background-color: #D1DCE8;
+}
+
+.imgcards{
+    width: 500px;
+    margin-bottom: 10px; /*Espaçar a imagem da legenda*/
+    border-radius: 25px;
+}
+
+.textocards{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* 2º Section (Programação e Livros em alta*/
+.sectionpromocaoelivros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 30px 0; /*Espaçar os 2 conteúdos (e a linha) do 3º section*/
+}
+
+.imgsection2{
+    max-width: 20%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.titulosection2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.textosection2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    inline-size: 300px;
+    text-align: justify;
+    text-indent: 30px;
+
+}
+
+.bloco1section2{
+    margin: 0 30px;
+    
+}
+
+.linhavertical{
+    height: 400px; 
+    border: 1px solid black; 
+    margin: 0 15px;
+} 
+
+.bloco2section2{
+    margin: 0 30px;
+    
+}
+
+/*  3º Section - Sobre nós / Local   */
+
+
+.sectionfinal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B4C3D2;
+    top: 0;
+    padding: 30px 0;
+}
+.sobrenos{
+    display: flex;
+    inline-size: 300px;
+    margin: auto;
+}
+.local{
+    margin: auto;
+}
+.local img{
+    max-width: 100%;
+    width: 400px;
+}
+
+
+
+
+/* Footer */
+
+.footerprincipal{
+    background-color: gray;
+    padding: 30px 0;
+}
+
+.footersection{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footerfigure{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerimgequipe{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+
+}
+
+.footertexto{
+    
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footernomealuno{
+    margin-top: 10px;
+}
+```
 
