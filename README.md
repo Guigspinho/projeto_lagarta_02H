@@ -355,10 +355,10 @@ No footer aplicamos uma cor mais escura, novamente um padding para espaçar o co
 ### Footer -  Equipe de desenvolvimento
 ~~~css
 .footerfigure{
-display: flex; 
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .footerimgequipe{
