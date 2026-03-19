@@ -354,11 +354,11 @@ No footer aplicamos uma cor mais escura, novamente um padding para espaçar o co
 
 ### Footer -  Equipe de desenvolvimento
 ~~~css
-	.footerfigure{
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.footerfigure{
+display: flex; 
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
 
 .footerimgequipe{
@@ -495,6 +495,7 @@ Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso h
 
 ## CSS (index.css)
 
+```css
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -712,5 +713,6 @@ body{
 .footernomealuno{
     margin-top: 10px;
 }
+```
 
 
