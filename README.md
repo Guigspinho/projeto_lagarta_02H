@@ -434,7 +434,8 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
 }
 
 
-/* 2º Section (Programação e Livros em alta*/
+### 2º Section
+~~~css
 .sectionpromocaoelivros{
     display: flex;
     justify-content: center;
@@ -479,6 +480,8 @@ No 3º section seguimos no mesmo molde dos anteriores, utilizamos um flexbox par
     margin: 0 30px;
     
 }
+~~~
+Nesta section mostramos nossos eventos proximos e livros em alta. Diferente do section 1, aqui usamos justify-content centralizado e diminuimos o padding para 30px para espaçar os dois conteudos. Colocamos inline size para quebrar os textos que colocamos, colocamos tambem uma linha vertical com altura, margem e borda definifidos, para separar os conteudos. Pra finalizar, os blocos 1 e 2, colocamos margem para separar os textos da imagem, para nao ficarem colados um com o outro.
 
 /*  3º Section - Sobre nós / Local   */
 
