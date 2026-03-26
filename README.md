@@ -715,4 +715,52 @@ body{
 }
 ```
 
+### JavaScript
 
+```javascript
+<script>
+        const button = document.getElementById("mudar_tema");
+
+        button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");    
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+```
+
+### CSS do Dark Mode
+
+```css
+:root {
+    --bg-color: #fffff0;
+    --text-color: #000000;
+    --card-bg: #f5f5f5;
+    --menu-color: #B4C3D2;
+    --footer-color: gray;
+}   
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    --bg-color: #7f8e9c;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --menu-color: #4e5c69;
+    --footer-color: #001e27;
+}
+
+#mudar_tema{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+```
