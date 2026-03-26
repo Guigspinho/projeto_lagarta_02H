@@ -403,7 +403,7 @@ Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso h
 
 sjdsajndjsandjasndnasdas
 
-##CSS Usado para o JavaScript mudar para Darkmode
+###CSS Usado para o JavaScript mudar para Darkmode
 
 ```css
 :root {
