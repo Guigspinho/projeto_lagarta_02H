@@ -442,10 +442,7 @@ body {
     cursor: pointer;
 }
 ```
-
-
-dsaasdsadasdasdasda
-
+Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. No root, definimos variaveis no css, onde eles são as cores padrões do nosso site (modo claro). No body especificamos a mudança de cor, colocamos um tempo de 0.3 segundos para ter uma transição mais suave. Além disso, declaramos uma class dark-mode, onde definimos cores mais escuras para o modo escuro implementado. Para finalizar, declaramos um ID chamado mudar_tema, onde ele contem um border: none (nele removemos as bordas), background-color: transparent (ele faz com que o botão fica com o fundo "invisivel", remove a cor de fundo) e cursor: pointer (ele faz com que o cursor muda pra maozinha assim que passsa por cima do botão).
 
 ## HTML (index.html)
 ```html
