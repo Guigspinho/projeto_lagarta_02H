@@ -381,9 +381,9 @@ No footer aplicamos uma cor mais escura, novamente um padding para espaçar o co
 ~~~
 Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso há um flexbox em coluna para deixar o nome abaixo da imagem, com espaço entre eles e centralizado. A classe "footerimgequipe" para definir o tamanho das imagens, deixar ela em círculo e com margem acima delas. Nas últimas 2 classes apenas centralizamos o texto, mudamos a fonte e adicionamos uma margem para separar mais os nomes das imagens.
 
-##Tutorial Feature JavaScript
+### Tutorial Feature JavaScript
 
-### JavaScript
+## JavaScript
 
 ```javascript
 <script>
@@ -401,9 +401,17 @@ Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso h
     </script>
 ```
 
-sjdsajndjsandjasndnasdas
+Primeiro declaramos uma constante button e pegamos pelo ```javascript getElementById("mudar_tema") ``` para logo após adicionarmos um evento ao clicar nesse botão com o ```javascript Button.addEventListener("click", () => ){``` O evento disparado muda a estilização da página com o com o ```javascript document.body.classList.toggle("dark-mode");``` que altera as cores do body padrão. Ademais, ainda no evento ao clicar verificamos qual classe está ativa  
+```javascript
+if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+}
+```
+Alterna a classe dark-mode no <body> se não tiver adiciona e se já remove, é isso que liga e desliga o dark-mode
 
-###CSS Usado para o JavaScript mudar para Darkmode
+## CSS Usado para o JavaScript mudar para Darkmode
 
 ```css
 :root {
