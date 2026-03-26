@@ -409,7 +409,7 @@ if (document.body.classList.contains("dark-mode")) {
                 localStorage.setItem("theme", "light");
 }
 ```
-Alterna a classe dark-mode no <body> se não tiver adiciona e se já remove, é isso que liga e desliga o dark-mode
+Alterna a classe dark-mode no body se não tiver adiciona e se já remove, é isso que liga e desliga o dark-mode
 
 ## CSS Usado para o JavaScript mudar para Darkmode
 
