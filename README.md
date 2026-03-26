@@ -381,6 +381,63 @@ No footer aplicamos uma cor mais escura, novamente um padding para espaçar o co
 ~~~
 Dentro do section no footer, temos um figure para cada pessoa da equipe, nisso há um flexbox em coluna para deixar o nome abaixo da imagem, com espaço entre eles e centralizado. A classe "footerimgequipe" para definir o tamanho das imagens, deixar ela em círculo e com margem acima delas. Nas últimas 2 classes apenas centralizamos o texto, mudamos a fonte e adicionamos uma margem para separar mais os nomes das imagens.
 
+##Tutorial Feature JavaScript
+
+### JavaScript
+
+```javascript
+<script>
+        const button = document.getElementById("mudar_tema");
+
+        button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");    
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+```
+
+sjdsajndjsandjasndnasdas
+
+##CSS Usado para o JavaScript mudar para Darkmode
+
+```css
+:root {
+    --bg-color: #fffff0;
+    --text-color: #000000;
+    --card-bg: #f5f5f5;
+    --menu-color: #B4C3D2;
+    --footer-color: gray;
+}   
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    --bg-color: #7f8e9c;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --menu-color: #4e5c69;
+    --footer-color: #001e27;
+}
+
+#mudar_tema{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+```
+
+
+dsaasdsadasdasdasda
+
 
 ## HTML (index.html)
 ```html
