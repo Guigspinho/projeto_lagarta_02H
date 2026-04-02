@@ -54,13 +54,18 @@ Em nosso head temos as tags metas que contém as configurações de resposividad
 ~~~
 Fizemos um header onde ficará localizado o menu da página com a logo e nesse menu teremos nossos links <a> que redirecionarão para as páginas posteriores do site.
 
-#### Section (Plano de fundo biblioteca)
+#### Section (Plano de fundo biblioteca e Carrossel)
 ~~~html
-<section>
-        <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
+<section class="carrossel">
+        <img src="capabiblioteca.png" class="slide ativo">
+        <img src="capa2.png" class="slide">
+        <img src="capa3.png" class="slide">
+    
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </section>
 ~~~
-Painel com uma imagem da biblioteca e o nome da mesma por cima.
+Section contendo as 3 imagens que serão usadas para o carrossel, definindo as classes da imagem principal como ".slide ativo" (que vai estar aberto quando iniciar o site) e os restantes apenas como ".slide" que serao transformados em ativo conforme o javascript. Abaixo também temos dois botões para não depender apenas do carrossel automático, podendo passar para a próxima imagem clicando neles.
 
 #### Main
 Início do conteúdo principal da página(main) com 3 sections.
