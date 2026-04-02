@@ -452,28 +452,36 @@ Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/x-icon" href="">
+	<link rel="icon" type="image/x-icon" href="">
     <title> Biblioteca </title>
 </head>
 <body>
     <header class="menu">
-        <img src="logorickriordan.png" alt="Logo" class="logo">
-        <a href="" class="fontemenu"> EVENTOS </a>
-        <a href="" class="fontemenu"> PROGRAMAÇÃO </a>
-        <a href="" class="fontemenu"> ACERVO </a>
-        <a href="" class="fontemenu" id="contato"> CONTATO </a>
+        <img src="logorickriordan.png" alt="Logo" class="logo"> 
+        <div class="links">
+            <button id="mudar_tema">☀️</button> 
+            <a href=""> EVENTOS </a> 
+            <a href=""> PROGRAMAÇÃO</a> 
+            <a href=""> ACERVO </a> 
+            <a href="" id="contato"> CONTATO </a> 
+        </div>
     </header>
-    <section>
-        <img src="capabiblioteca.png" alt="Imagem de fundo da biblioteca">
+    <section class="carrossel">
+        <img src="capabiblioteca.png" class="slide ativo">
+        <img src="capa2.png" class="slide">
+        <img src="capa3.png" class="slide">
+    
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </section>
     <h1 class="tituloinicial">Conheça a nossa Biblioteca!</h1>
     <main> 
-        <section class="sectioncards">
-            <section>
+        <section class="sectioncards"> <!-- 1º Section com os 3 cards principais(3 sections) -->
+            <section> <!-- 1º Card (Programação)-->
                 <header>
-                    <a href="programacao.html">
-                        <img src="cardprogramacao.jpg" alt="" class="imgcards">
-                    </a>
+					<a href="programacao.html">
+                    	<img src="cardprogramacao.jpg" alt="" class="imgcards">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -482,11 +490,11 @@ Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. 
                 </div>
             </section>
 
-            <section>
+            <section> <!-- 2º Card (Acervo) -->
                 <header>
-                    <a href="acervo.html">
-                        <img src="cardacervo.jpg" alt="" class="imgcards">
-                    </a>
+					<a href="acervo.html">
+                   		<img src="cardacervo.jpg" alt="" class="imgcards">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -495,11 +503,11 @@ Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. 
                 </div>
             </section>
 
-            <section>
+            <section> <!-- 3º Card (Eventos) -->
                 <header>
-                    <a href="eventos.html">
-                        <img src="cardeventos.jpg" alt="" class="imgcards">
-                    </a>
+					<a href="eventos.html">
+                    	<img src="cardeventos.jpg" alt="" class="imgcards">
+					</a>
                 </header>
                 <div>
                     <article>
@@ -509,48 +517,94 @@ Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. 
             </section>         
         </section>
 
-        <section class="sectionpromocaoelivros">
-            <div>
+        <section class="sectionpromocaoelivros"> <!-- 2º Section -->
+            <img src="eventoprox.jpg" alt="" class="imgsection2">
+            <div class="bloco1section2"> <!-- Promoção/Evento -->
                 <article>
-                    <img src="eventoprox.jpg" alt="" class="imgsection2">
+                    <h3 class="titulosection2">Eventos Próximos</h3>
                     <p class="textosection2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste pariatur libero architecto in, consequuntur deserunt ratione voluptate cupiditate aliquam. At provident exercitationem facere ipsa dolorum!</p>
                 </article>
             </div>
-            <div>
+            
+            <div class="linhavertical"></div>  
+
+            <div class="bloco2section2"> <!-- Livro em alta-->
                 <article>
-                    <img src="livroemalta.jpg" alt="" class="imgsection2">
+                    <h3 class="titulosection2" style="text-align: right;">Livro em Alta</h3>
                     <p class="textosection2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste debitis eum a aut dolore beatae, consectetur quam esse fuga odio repellendus natus pariatur dignissimos eos?</p>
                 </article>
             </div>
+            <img src="livroemalta.jpg" alt="" class="imgsection2">
         </section>
 
-        <section>
-            <div>
+        <section class="sectionfinal"> <!-- 3º Section -->
+            <div class="sobrenos"> <!-- Sobre nós -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur dolore ut! Nisi molestiae nostrum alias, molestias amet nobis itaque.</p>
             </div>
-            <div>
+            <div class="local"> <!-- Local -->
                 <link rel="stylesheet" href="">
+                <img src="mapametro.jpg" alt="">
             </div>
         </section>
     </main>
     <footer class="footerprincipal">
-        <p>R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
-        <p>Desenvolvido por:</p>
+        <p class="footertexto" style="margin-bottom: 30px;">R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
+        <p class="footertexto">Desenvolvido por:</p>
         <section class="footersection">
             <figure class="footerfigure">
                 <img src="iconeguilherme.png" alt="" class="footerimgequipe">
-                <figcaption>Guilherme Pinho</figcaption>
+                <figcaption class="footernomealuno">Guilherme Pinho</figcaption>
             </figure>
             <figure class="footerfigure">
                 <img src="iconemoabe.png" alt="" class="footerimgequipe">
-                <figcaption>Moabe Guedes</figcaption>
+                <figcaption class="footernomealuno">Moabe Guedes</figcaption>
             </figure>
             <figure class="footerfigure">
                 <img src="iconeryan.png" alt="" class="footerimgequipe">
-                <figcaption>Ryan Sousa</figcaption>
+                <figcaption class="footernomealuno">Ryan Sousa</figcaption>
             </figure>
         </section>
     </footer>
+    <script>
+        const button = document.getElementById("mudar_tema");
+
+        button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+
+    const slides = document.querySelectorAll(".slide");
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+
+    let index = 0;
+
+    function mostrarSlide(i) {
+        slides.forEach(slide => slide.classList.remove("ativo"));
+        slides[i].classList.add("ativo");
+    }
+
+    next.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+    });
+
+    prev.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        mostrarSlide(index);
+    });
+
+    // Automático (troca a cada 3 segundos)
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+    }, 3000);
+    </script>
 </body>
 </html>
 ```
@@ -825,4 +879,40 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.ativo {
+    opacity: 1;
+}
+
+/* Botões */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 ```
