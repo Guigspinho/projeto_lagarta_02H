@@ -449,6 +449,48 @@ body {
 ```
 Nesse CSS, implementamos as caracteristicas do dark mode utilizando javascript. No root, definimos variaveis no css, onde eles são as cores padrões do nosso site (modo claro). No body especificamos a mudança de cor, colocamos um tempo de 0.3 segundos para ter uma transição mais suave. Além disso, declaramos uma class dark-mode, onde definimos cores mais escuras para o modo escuro implementado. Para finalizar, declaramos um ID chamado mudar_tema, onde ele contem um border: none (nele removemos as bordas), background-color: transparent (ele faz com que o botão fica com o fundo "invisivel", remove a cor de fundo) e cursor: pointer (ele faz com que o cursor muda pra maozinha assim que passsa por cima do botão).
 
+##CSS usado para o carrossel
+
+```css
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.ativo {
+    opacity: 1;
+}
+
+/* Botões */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+```
+
+Nesse CSS, estãos estilizando o carrossel, que foi feito no JavaScript. Para iniciar, começamos criando o classe .carrossel, onde nele usamos position: relative, que serve como referência para os elementos dentro dele que usam position: absolute (tipo os slides e botões). Seguimos com width: 100% e height: 400px, onde o width ocupa toda a largura que temos e o heigth a altura fixa do carrossel. Nessa classe finalizamos com overflow: hidden, onde ele esconde qualquer parte dos slides que "escapa" da área. Ele ajuda muito com efeito carrossel. Declaramos tambem a classe .slide, onde mexemos com as imagens do carrossel. Utilizamos position: absolute, onde faz todos os slides um em cima do outro, widht e height: 100%, que faz com que ocupa todo o espaço do .carrossel, object-fit: cover, ele ajuda a imagem preencher o espaço sem distorcer, opacity: 0, deixa o slide invisível por padrão e transition: opacity 0.5s ease, ele faz com que crie o efeito mais suave quando a opacidade muda. Criamos tambem o .slide.ativo, onde mora o segredo do carrossel. Quando um slide recebe a classe ativo, ele fica invisivel (opacity: 1), pois como temos transition, ele aparece com um efeito suave, ou fade suave. Ou seja, você controla qual imagem aparece só adicionando/removendo a classe ativo pelo JavaScript. Na penultima classe, os botões (.prev, .next), onde nele tem position: absolute, ele posiciona dentro do .carrossel, top: 50% + transform: translateY(-50%), eles centralizam verticalmente, font-size: 30px, que é o tamanho do ícone/texto do botão, background: rgba(0,0,0,0.5), que é o fundo preto transparente, color: white, que é a cor do texto/ícone, e para finalizar, cursor: pointer, que mostra a "maozinha" ao passar o mouse. E para finalizar o CSS, temos as classes .prev e .next. O prev tem left: 10px e o next tem right: 10px, onde eles definem onde cada botão fica (prev a esquerda e o next a direita).
+
 ## HTML (index.html)
 ```html
 <!DOCTYPE html>
