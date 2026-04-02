@@ -415,8 +415,8 @@ if (document.body.classList.contains("dark-mode")) {
 }
 ```
 Alterna a classe dark-mode no body se não tiver adiciona e se já remove, é isso que liga e desliga o dark-mode
-### Javascript - Carrosel
-# Definição de variáveis e constantes
+# Javascript - Carrosel
+### Definição de variáveis e constantes
 Logo no início, criamos 3 constantes e 1 variável, usamos as constantes para estabelecer uma conexão direta com o HTML ao selecionar os elementos necessários para o funcionamento.Ele coleta todos os elementos que possuem a classe .slide, que representam cada item do carrossel, e também captura os botões de navegação, identificados pelas classes .next e .prev. A partir desse momento, o JavaScript passa a ter controle sobre esses elementos, podendo alterar seu comportamento e aparência dinamicamente.Em seguida, é criada a variável index, que funciona como um marcador de posição, indicando qual slide está atualmente ativo. Esse índice começa em zero, o que significa que, por padrão, o primeiro elemento da lista será exibido. Esse controle é essencial porque todo o funcionamento do carrossel gira em torno de atualizar esse valor e refletir essa mudança visualmente.
 ```javascript
     const slides = document.querySelectorAll(".slide");
