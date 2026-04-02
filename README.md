@@ -415,6 +415,44 @@ if (document.body.classList.contains("dark-mode")) {
 }
 ```
 Alterna a classe dark-mode no body se não tiver adiciona e se já remove, é isso que liga e desliga o dark-mode
+### Javascript - Carrosel
+# Definição de variáveis e constantes
+Logo no início, criamos 3 constantes e 1 variável, usamos as constantes para estabelecer uma conexão direta com o HTML ao selecionar os elementos necessários para o funcionamento.Ele coleta todos os elementos que possuem a classe .slide, que representam cada item do carrossel, e também captura os botões de navegação, identificados pelas classes .next e .prev. A partir desse momento, o JavaScript passa a ter controle sobre esses elementos, podendo alterar seu comportamento e aparência dinamicamente.Em seguida, é criada a variável index, que funciona como um marcador de posição, indicando qual slide está atualmente ativo. Esse índice começa em zero, o que significa que, por padrão, o primeiro elemento da lista será exibido. Esse controle é essencial porque todo o funcionamento do carrossel gira em torno de atualizar esse valor e refletir essa mudança visualmente.
+```javascript
+    const slides = document.querySelectorAll(".slide");
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+
+    let index = 0;
+```
+A função mostrarSlide é o núcleo lógico do código, sendo responsável por garantir que apenas um slide fique visível por vez. Quando ela é chamada, primeiro percorre todos os slides removendo a classe "ativo" de cada um deles, o que, na prática, faz com que todos sejam ocultados (isso depende do CSS, que normalmente associa a classe "ativo" à visibilidade do elemento). Logo após limpar todos, a função adiciona essa mesma classe apenas ao slide correspondente ao índice recebido como parâmetro, fazendo com que somente aquele elemento seja exibido. Esse processo cria a sensação de troca de slides.
+```javascript
+    function mostrarSlide(i) {
+        slides.forEach(slide => slide.classList.remove("ativo"));
+        slides[i].classList.add("ativo");
+    }
+```
+A interação com o usuário acontece por meio dos eventos de clique adicionados aos botões de navegação. No caso do botão “próximo”, sempre que ele é clicado, o índice é incrementado em uma unidade, avançando para o próximo slide. No entanto, para evitar que o índice ultrapasse o tamanho do array de slides e cause erro, é utilizada uma operação matemática chamada módulo (%). Essa operação faz com que, ao chegar no último slide, o próximo incremento faça o índice voltar automaticamente para zero, criando um ciclo infinito. Já no botão “anterior”, o processo é semelhante, mas ao invés de incrementar, o índice é decrementado. Para evitar valores negativos, o código soma o tamanho total de slides antes de aplicar o módulo, garantindo que, ao voltar do primeiro slide, o carrossel vá diretamente para o último.
+```javascript
+    next.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+    });
+
+    prev.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        mostrarSlide(index);
+    });
+```
+Além da navegação manual, o carrossel também possui um comportamento automático implementado com setInterval. Essa função executa um trecho de código repetidamente em um intervalo de tempo definido, que nesse caso é de 3 segundos. A cada execução, o índice é incrementado da mesma forma que no botão “próximo”, e a função mostrarSlide é chamada para atualizar a exibição. Isso faz com que o carrossel avance sozinho continuamente, mesmo sem interação do usuário.
+```javascript
+    // Automático (troca a cada 3 segundos)
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+    }, 3000);
+    </script>
+```
 
 ## CSS Usado para o JavaScript mudar para Darkmode
 
