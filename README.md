@@ -815,10 +815,221 @@ Este bloco de media query é ativado quando a largura da tela for de até 768px 
 
 ---
 
-## Arquivos do Projeto
+## HTML Atualizado (index.html)
 
-| Arquivo        | Descrição                              |
-|----------------|----------------------------------------|
-| `index.html`   | Estrutura principal da página          |
-| `index.css`    | Estilos gerais e responsividade        |
-| `README.md`    | Documentação do projeto                |
+Versão final do `index.html` com todas as melhorias aplicadas: textos reais substituindo o Lorem Ipsum, atributos `alt` descritivos nas imagens, ícone SVG no botão de tema, mapa do Google Maps via `<iframe>` e JavaScript movido para arquivo externo `script.js`.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="iconerickriordan.png">
+    <title> Biblioteca </title>
+</head>
+<body>
+    <header class="menu">
+        <img src="logorickriordan.png" alt="Logo da biblioteca Rick Riordan" class="logo"> 
+        <nav class="links">
+            <button id="mudar_tema"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+            </button> 
+            <a href=""> EVENTOS </a> 
+            <a href=""> PROGRAMAÇÃO</a> 
+            <a href=""> ACERVO </a> 
+            <a href="" id="contato"> CONTATO </a> 
+        </nav>
+    </header>
+    <section class="carrossel">
+        <img src="capabiblioteca.png" class="slide ativo">
+        <img src="capa2.png" class="slide">
+        <img src="capa3.png" class="slide">
+    
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </section>
+    <h1 class="tituloinicial">Conheça a nossa Biblioteca!</h1>
+    <main> 
+        <section class="sectioncards"> <!-- 1º Section com os 3 cards principais(3 sections) -->
+            <section> <!-- 1º Card (Programação)-->
+                <header>
+                    <a href="programacao.html">
+                        <img src="cardprogramacao.jpg" alt="Imagem retratando a programação da biblioteca, contendo uma peça sendo realizada para crianças." class="imgcards">
+                    </a>
+                </header>
+                    <article>
+                        <h3 class="titulosection1">Programação</h3>
+                        <p class="textocards">Confira a programação da nossa biblioteca, com atividades culturais, oficinas criativas e momentos especiais pensados para crianças, jovens e adultos.</p>
+                    </article>
+            </section>
+
+            <section> <!-- 2º Card (Acervo) -->
+                <header>
+                    <a href="acervo.html">
+                        <img src="cardacervo.jpg" alt="Imagem retratando o acervo, contendo uma estante cheia de livros se estendo até o fim da foto." class="imgcards">
+                    </a>
+                </header>
+                    <article>
+                        <h3 class="titulosection1">Acervo</h3>
+                        <p class="textocards">Explore nosso acervo com uma grande variedade de livros, desde clássicos da literatura até obras contemporâneas para todos os gostos.</p>
+                    </article>
+            </section>
+
+            <section> <!-- 3º Card (Eventos) -->
+                <header>
+                    <a href="eventos.html">
+                        <img src="cardeventos.jpg" alt="Imagem retratando os eventos que podem ser realizados na biblioteca, contendo o lançamento de um livro de um escritor, juntamente a outras pessoas." class="imgcards">
+                    </a>
+                </header>
+                    <article>
+                        <h3 class="titulosection1">Faça o seu evento!</h3>
+                        <p class="textocards">Participe dos nossos eventos, como lançamentos de livros, rodas de leitura e encontros com autores que aproximam você do universo literário.</p>
+                    </article>
+            </section>         
+        </section>
+
+        <section class="sectionpromocaoelivros"> <!-- 2º Section -->
+            <img src="eventoprox.jpg" alt="Imagem retratando os próximos eventos que irão ocorrer, contendo uma dinâmica com crianças sentadas em círculo." class="imgsection2">
+                <article class="bloco1section2"> <!-- Promoção/Evento -->
+                    <h3 class="titulo1section2">Eventos Próximos</h3>
+                    <p class="textosection2">Fique por dentro dos próximos eventos da biblioteca! Teremos contação de histórias, oficinas educativas e atividades interativas para todas as idades ao longo do mês.</p>
+                </article>
+            
+            <div class="linhavertical"></div>  
+            <div class="linhahorizontal"></div>
+
+                <article class="bloco2section2"> <!-- Livro em alta-->
+                    <h3 class="titulo2section2">Livro em Alta</h3>
+                    <p class="textosection2">Descubra o livro em destaque da semana, escolhido pelos nossos leitores. Uma obra envolvente que promete encantar e despertar o interesse pela leitura.</p>
+                </article>
+            <img src="livroemalta.jpg" alt="Imagem com o atual livro em alta, neste caso, o livro 'Perigoso! Este livro contém coelhos!'" class="imgsection2">
+        </section>
+
+        <section class="sectionfinal"> <!-- 3º Section -->
+            <article class="sobrenos"> <!-- Sobre nós -->
+                <h3 class="titulosobrenos">Sobre Nós</h3>
+                <p>Somos um espaço dedicado ao incentivo à leitura, ao conhecimento e à cultura. Nossa missão é proporcionar um ambiente acolhedor onde todos possam aprender, explorar e se conectar através dos livros.</p>
+            </article>
+            <div class="local"> <!-- Local -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0720126121896!2d-46.682935!3d-23.565856999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce572d94233575%3A0xac043ea588d47e1a!2sLivraria%20da%20Travessa!5e0!3m2!1spt-BR!2sbr!4v1775683529936!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="footerprincipal">
+        <p class="footertexto" style="margin-bottom: 30px;">R. Conselheiro Brotero, 1353 - Santa Cecilia, São Paulo - SP, 01232-011</p>
+        <p class="footertexto">Desenvolvido por:</p>
+        <section class="footersection">
+            <figure class="footerfigure">
+                <img src="iconeguilherme.png" alt="Imagem de perfil do membro do grupo Guilherme Pinho" class="footerimgequipe">
+                <figcaption class="footernomealuno">Guilherme Pinho</figcaption>
+            </figure>
+            <figure class="footerfigure">
+                <img src="iconemoabe.png" alt="Imagem de perfil do membro do grupo Moabe Guedes" class="footerimgequipe">
+                <figcaption class="footernomealuno">Moabe Guedes</figcaption>
+            </figure>
+            <figure class="footerfigure">
+                <img src="iconeryan.png" alt="Imagem de perfil do membro do grupo Ryan Sousa" class="footerimgequipe">
+                <figcaption class="footernomealuno">Ryan Sousa</figcaption>
+            </figure>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## JavaScript Atualizado (script.js)
+
+Versão final do JavaScript separado em arquivo externo `script.js`. Nessa atualização, o dark mode foi aprimorado para também trocar o ícone do botão (sol/lua) e a logo da página ao alternar entre os temas, além de carregar o tema salvo no `localStorage` assim que a página é aberta. O intervalo do carrossel automático também foi ajustado de 3 para 5 segundos.
+
+### Dark Mode
+
+```javascript
+const button = document.getElementById("mudar_tema");
+const logo = document.querySelector(".logo");
+const temaSalvo = localStorage.getItem("theme");
+
+// Aplicar tema salvo ao carregar a página
+if (button){
+    if (temaSalvo === "dark") {
+        document.body.classList.add("dark-mode");
+
+        button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+        </svg>`;
+
+        logo.src = "logorickriordan-dark.png";
+
+    } else {
+        button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+        </svg>`;
+
+        logo.src = "logorickriordan.png";
+    }
+
+    button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+            </svg>`;
+            logo.src = "logorickriordan-dark.png";
+
+        } else {
+            localStorage.setItem("theme", "light");
+            button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg>`;
+            logo.src = "logorickriordan.png";
+        }
+    });
+}
+```
+
+Nessa versão atualizada do dark mode, além de alternar as cores da página, o JavaScript também troca o ícone do botão entre sol (modo claro) e lua (modo escuro) usando `button.innerHTML` com SVGs do Bootstrap Icons. A logo da biblioteca também é trocada para uma versão adaptada ao tema escuro (`logorickriordan-dark.png`). A constante `temaSalvo` verifica o `localStorage` assim que a página carrega, garantindo que o tema preferido do usuário seja aplicado automaticamente a cada visita, sem precisar clicar no botão novamente. Todo o bloco fica protegido pelo `if (button)` para evitar erros em páginas que não possuem o botão de tema.
+
+---
+
+### Carrossel
+
+```javascript
+// Carrossel
+const slides = document.querySelectorAll(".slide");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+let index = 0;
+
+function mostrarSlide(i) {
+    slides.forEach(slide => slide.classList.remove("ativo"));
+    slides[i].classList.add("ativo");
+}
+
+next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    mostrarSlide(index);
+});
+
+prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    mostrarSlide(index);
+});
+
+// Automático (troca a cada 5 segundos)
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    mostrarSlide(index);
+}, 5000);
+```
+
+A lógica do carrossel se mantém a mesma da versão anterior, com a única alteração sendo o intervalo do avanço automático, que passou de 3000ms (3 segundos) para 5000ms (5 segundos), dando mais tempo para o usuário visualizar cada imagem antes da troca automática.
+
+---
